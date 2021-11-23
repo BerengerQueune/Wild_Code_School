@@ -1,12 +1,13 @@
 # Data Analysis course at the Wild Code School
 
-This repository contains most of the Notebooks I have done as part of my training to become a Data Analyst.
+This repository contains Notebooks I have done as part of my training.
 
 Course : https://www.wildcodeschool.com/fr-FR/formations/formation-data-analyst
 
 It covers the following topics:
 
 Machine Learning: https://github.com/BerengerQueune/wild_notebooks/tree/main/Machine_Learning
+
 Matplotlib: https://github.com/BerengerQueune/wild_notebooks/tree/main/Matplotlib
 
 Numpy: https://github.com/BerengerQueune/wild_notebooks/tree/main/Numpy
