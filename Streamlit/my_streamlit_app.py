@@ -67,8 +67,10 @@ with col3:
 col1, col2, col3= st.columns([1,8,1])
 
 with col2:
-    df_voiture
+    df
 
+
+st.write("Aperçu des données proposées dans la heatmap ci-dessous.")
 col1, col2, col3= st.columns([1,8,1])
 
 with col2:
