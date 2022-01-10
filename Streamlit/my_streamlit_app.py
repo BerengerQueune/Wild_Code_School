@@ -25,7 +25,7 @@ df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 #VIZ
 config = {'displayModeBar': False} # improve visualisation
 
-df_voiture
+
 
 
 st.markdown('* mpg : consommation en miles par gallon (impérial)')
@@ -63,6 +63,11 @@ with col3:
     Japan_button = st.button("Japon")
     if Japan_button:
         df = df_Japan
+
+col1, col2, col3= st.columns([1,8,1])
+
+with col2:
+    df_voiture
 
 col1, col2, col3= st.columns([1,8,1])
 
