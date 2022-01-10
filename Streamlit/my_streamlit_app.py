@@ -5,6 +5,7 @@ import datetime as dt
 import plotly.express as px
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 st.header("Streamlit : build and share data apps")
 st.image('Streamlit/assets/challenge.png')
