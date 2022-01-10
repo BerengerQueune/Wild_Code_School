@@ -36,12 +36,12 @@ with col1:
 
 with col2:
     EU_button = st.button("Europe")
-    if US_button:
+    if EU_button:
         df = df_EU
 
 with col3:
     Japan_button = st.button("Japon")
-    if US_button:
+    if Japan_button:
         df = df_Japan
 
 
