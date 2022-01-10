@@ -22,6 +22,8 @@ df_Japan = df_voiture[df_voiture['continent'] == ' Japan.']
 df_US = df_voiture[df_voiture['continent'] == ' US.']
 df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 
+#VIZ
+config = {'displayModeBar': False} # nascondere la barra di plotly
 
 
 col1, col2, col3= st.columns([3,3,3])
