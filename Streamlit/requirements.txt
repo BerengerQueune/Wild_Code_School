@@ -3,3 +3,6 @@ chart_studio
 scikit-learn
 IMDbPY
 matplotlib
+seaborn
+pandas
+numpy
