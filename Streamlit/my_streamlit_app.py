@@ -52,20 +52,22 @@ with col3:
     if Japan_button:
         df = df_Japan
 
+col1, col2, col3= st.columns([1,8,1])
 
+with col2:
 
-corr = df.corr()
-fig = go.Figure()
-fig.add_trace(go.Heatmap(
-    z = corr,
-    x = corr.columns.values,
-    y = corr.columns.values,
-    colorscale = px.colors.diverging.RdBu,
-    zmid=0
-))
+    corr = df.corr()
+    fig = go.Figure()
+    fig.add_trace(go.Heatmap(
+        z = corr,
+        x = corr.columns.values,
+        y = corr.columns.values,
+        colorscale = px.colors.diverging.RdBu,
+        zmid=0
+    ))
 
-fig.update_layout(width=1000, height=900)
-st.plotly_chart(fig)
+    fig.update_layout(width=1000, height=900)
+    st.plotly_chart(fig)
 
 st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie 'time_to_60'. C'est également vrai quand on sélectionné la région 'US' mais les données sont assez différentes sur la région 'Japon' et 'Europe'.")
 
@@ -76,8 +78,12 @@ st.markdown("<h1 style='text-align: center;'>Voitures produites par région</h1>
 count_list = {'Region': ['US', 'Europe', 'Japon'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
 df_count = pd.DataFrame(count_list)  
 
-fig = px.bar(df_count, x="Region", y="Nombre de voitures")
-st.plotly_chart(fig)
+col1, col2, col3= st.columns([1,8,1])
+
+with col2:
+
+    fig = px.bar(df_count, x="Region", y="Nombre de voitures")
+    st.plotly_chart(fig)
 
 st.write("Il y a bien plus de voitures produites aux US qu'en Europe et au Japon.")
 
