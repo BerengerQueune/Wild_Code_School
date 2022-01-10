@@ -25,6 +25,8 @@ df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 #VIZ
 config = {'displayModeBar': False} # improve visualisation
 
+df_voiture
+
 
 st.markdown('* mpg : consommation en miles par gallon (impérial)')
 st.markdown('* cylinders : nombre de cylindres de la voiture')
