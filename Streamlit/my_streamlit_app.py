@@ -13,3 +13,6 @@ import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
 st.header("Streamlit : build and share data apps")
+
+
+st.image('Challenge.jpg')
