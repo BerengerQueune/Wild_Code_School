@@ -111,16 +111,16 @@ st.write("Il y a bien plus de voitures produites aux US qu'en Europe et au Japon
 col1, col2, col3= st.columns([3,3,3])
 
 with col1:
-    fig = px.histogram(df_US, x="year")
+    fig = px.histogram(df_US, x="year", title = "US")
     st.plotly_chart(fig, config = config, use_container_width = True)
 
 
 with col2:
-    fig = px.histogram(df_EU, x="year")
+    fig = px.histogram(df_EU, x="year", title = "Europe")
     st.plotly_chart(fig, config = config, use_container_width = True)
 
 with col3:
-    fig = px.histogram(df_Japan, x="year")
+    fig = px.histogram(df_Japan, x="year", title = "Japon")
     st.plotly_chart(fig, config = config, use_container_width = True)
 
 
