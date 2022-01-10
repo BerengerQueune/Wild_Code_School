@@ -87,5 +87,5 @@ st.markdown("<h1 style='text-align: center;'>Voitures produites par région</h1>
 count_list = {'Region': ['US', 'Europe', 'Japan'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
 df_count = pd.DataFrame(count_list)  
 
-fig = px.histogram(df_count, x="Nombre de voitures")
+fig = px.bar(df_count, x="Region", y="Nombre de voitures")
 st.plotly_chart(fig)
