@@ -28,4 +28,4 @@ fig.add_trace(go.Heatmap(
 fig.update_layout(width=1000, height=900)
 st.plotly_chart(fig)
 
-st.write("Comme le montre bien la heatmap. La catégorie "mpg" est fortement corrélée aux catégories "cylinders", "cubicinches", "hp", "weightlbs". On constate également que la catégorie "hp" est corrélée à la catégorie "time_to_60".)
+st.write("Comme le montre bien la heatmap. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie "time_to_60".")
