@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.set_page_config(page_title='Données voitures', page_icon='👈', layout="wide")
+st.set_page_config(page_title='Données voitures', page_icon='👈')
 
 st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
 
@@ -87,16 +87,16 @@ col1, col2, col3= st.columns([3,3,3])
 
 with col1:
     fig = px.histogram(df_US, x="time-to-60")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, config = config, use_container_width = True)
 
 
 with col2:
     fig = px.histogram(df_EU, x="time-to-60")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, config = config, use_container_width = True)
 
 with col3:
     fig = px.histogram(df_Japan, x="time-to-60")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, config = config, use_container_width = True)
 
 
 
