@@ -13,7 +13,10 @@ st.image('Streamlit/assets/challenge.png')
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
 
 
+col1, col2, col3= st.columns([3,3,3])
 
+with col2:
+    st.write("col2")
 
 corr = df_voiture.corr()
 fig = go.Figure()
