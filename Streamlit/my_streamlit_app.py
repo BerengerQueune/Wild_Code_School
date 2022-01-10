@@ -15,6 +15,9 @@ df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/maste
 
 col1, col2, col3= st.columns([3,3,3])
 
+with col1:
+    st.write("col1")
+
 with col2:
     st.write("col2")
 
