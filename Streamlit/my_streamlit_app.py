@@ -8,24 +8,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.set_page_config(page_title='Données voitures', page_icon='👈')
+st.set_page_config(page_title='Données voitures', page_icon='👈', layout="wide")
 
 st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
 
-def _max_width_():
-    max_width_str = "max-width: 1300px;"
-    st.markdown(
-        f"""
-    <style>
-    .reportview-container .main .block-container{{
-        {max_width_str}
-    }}
-    </style>    
-    """,
-        unsafe_allow_html=True,
-    )
 
-_max_width_()
 
 st.image('Streamlit/assets/challenge.png')
 
