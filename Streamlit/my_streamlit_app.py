@@ -13,8 +13,8 @@ st.set_page_config(page_title='Données voitures', page_icon='👈', layout="wid
 st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
 
 
-
-st.image('Streamlit/assets/challenge.png')
+col1, col2, col3= st.columns([1,8,1])
+col2.image('Streamlit/assets/challenge.png', use_column_width=True)
 
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
 df = df_voiture
