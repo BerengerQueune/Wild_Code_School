@@ -84,8 +84,13 @@ st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. 
 st.markdown("<h1 style='text-align: center;'>Voitures produites par région</h1>", unsafe_allow_html=True)
 
 
-count_list = {'Region': ['US', 'Europe', 'Japan'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
+count_list = {'Region': ['US', 'Europe', 'Japon'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
 df_count = pd.DataFrame(count_list)  
 
 fig = px.bar(df_count, x="Region", y="Nombre de voitures")
+st.plotly_chart(fig)
+
+st.write("Il y a bien plus de voitures produites aux US qu'en Europe et au Japon.")
+
+fig = px.histogram(df_voiture, x="time_to_60")
 st.plotly_chart(fig)
