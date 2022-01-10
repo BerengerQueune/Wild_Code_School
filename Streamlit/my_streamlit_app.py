@@ -43,7 +43,7 @@ with col3:
         df = df_Japan
 
 
-
+df
 
 corr = df.corr()
 fig = go.Figure()
