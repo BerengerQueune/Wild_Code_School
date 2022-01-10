@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.set_page_config(page_title='Données voitures', page_icon='👈')
+st.set_page_config(page_title='Données voitures', page_icon='👈', layout="wide")
 
 st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
 
