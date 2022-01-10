@@ -7,7 +7,26 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.header("Streamlit : build and share data apps")
+
+st.set_page_config(page_title='Data Yoyo', page_icon=':musical_note:')
+
+st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
+
+def _max_width_():
+    max_width_str = "max-width: 1300px;"
+    st.markdown(
+        f"""
+    <style>
+    .reportview-container .main .block-container{{
+        {max_width_str}
+    }}
+    </style>    
+    """,
+        unsafe_allow_html=True,
+    )
+
+_max_width_()
+
 st.image('Streamlit/assets/challenge.png')
 
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
@@ -21,7 +40,7 @@ df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 col1, col2, col3= st.columns([3,3,3])
 
 with col2:
-    all_button = st.button("Toutes les régions.")
+    all_button = st.button("Toutes les régions")
     if all_button:
         df = df_voiture
 
