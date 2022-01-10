@@ -26,4 +26,4 @@ fig.add_trace(go.Heatmap(
 ))
 
 fig.update_layout(width=1000, height=900)
-st.pyplot(fig.show())
+st.plotly_chart(fig.show())
