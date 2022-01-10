@@ -92,5 +92,25 @@ st.plotly_chart(fig)
 
 st.write("Il y a bien plus de voitures produites aux US qu'en Europe et au Japon.")
 
-fig = px.histogram(df_voiture, x="time-to-60")
-st.plotly_chart(fig)
+
+
+col1, col2, col3= st.columns([3,3,3])
+
+with col1:
+    fig = px.histogram(df_US, x="time-to-60")
+    st.plotly_chart(fig)
+
+
+with col2:
+    fig = px.histogram(df_EU, x="time-to-60")
+    st.plotly_chart(fig)
+
+        with col3:
+    fig = px.histogram(df_Japan, x="time-to-60")
+    st.plotly_chart(fig)
+
+
+
+
+
+
