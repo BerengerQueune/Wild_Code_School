@@ -11,9 +11,9 @@ st.header("Streamlit : build and share data apps")
 st.image('Streamlit/assets/challenge.png')
 
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
-df_Japan = df_voiture[df_voiture['continent'] == 'Japan']
-df_US = df_voiture[df_voiture['continent'] == 'US']
-df_EU = df_voiture[df_voiture['continent'] == 'Europe']
+df_Japan = df_voiture[df_voiture['continent'] == ' Japan.']
+df_US = df_voiture[df_voiture['continent'] == ' US.']
+df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 
 col1, col2, col3= st.columns([3,3,3])
 
