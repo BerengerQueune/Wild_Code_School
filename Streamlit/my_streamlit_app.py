@@ -23,7 +23,17 @@ df_US = df_voiture[df_voiture['continent'] == ' US.']
 df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 
 #VIZ
-config = {'displayModeBar': False} # nascondere la barra di plotly
+config = {'displayModeBar': False} # improve visualisation
+
+
+st.markdown('* mpg : consommation en miles par gallon (impérial)')
+st.markdown('* cylinders : nombre de cylindres de la voiture')
+st.markdown('* cubinches : cylindrée en cubic inches (122 cubic inches = 2 litres)')
+st.markdown('* hp : puissance en chevaux')
+st.markdown('* weightlbs : poids en livres (1 livre = 0.454 kg')
+st.markdown('* time-to-60 : temps pour aller de 0 à 60 miles par heure (presque équivalent au 0 à 100 kmh)')
+st.markdown('* year : année de sortie du modèle')
+st.markdown('* continent : région d\'origine de la voiture (entre Europe, USA et Japon)')
 
 
 col1, col2, col3= st.columns([3,3,3])
