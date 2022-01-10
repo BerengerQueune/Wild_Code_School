@@ -105,7 +105,7 @@ with col2:
     fig = px.histogram(df_EU, x="time-to-60")
     st.plotly_chart(fig)
 
-        with col3:
+with col3:
     fig = px.histogram(df_Japan, x="time-to-60")
     st.plotly_chart(fig)
 
