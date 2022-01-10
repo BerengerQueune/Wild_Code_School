@@ -16,7 +16,7 @@ df_Japan = df_voiture[df_voiture['continent'] == ' Japan.']
 df_US = df_voiture[df_voiture['continent'] == ' US.']
 df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 
-df_US
+
 
 col1, col2, col3= st.columns([3,3,3])
 
@@ -43,7 +43,6 @@ with col3:
     Japan_button = st.button("Japon")
     if Japan_button:
         df = df_Japan
-
 
 df
 
