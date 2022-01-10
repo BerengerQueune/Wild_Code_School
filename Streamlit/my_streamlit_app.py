@@ -15,11 +15,25 @@ df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/maste
 
 col1, col2, col3= st.columns([3,3,3])
 
+with col2:
+    st.write("Toutes les régions")
+
+
+col1, col2, col3= st.columns([3,3,3])
+
+
 with col1:
-    st.write("col1")
+    st.write("US")
 
 with col2:
-    st.write("col2")
+    st.write("Europe")
+
+with col3:
+    st.write("Japon")
+
+
+
+
 
 corr = df_voiture.corr()
 fig = go.Figure()
