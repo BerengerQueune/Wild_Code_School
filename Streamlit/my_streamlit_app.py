@@ -83,5 +83,9 @@ st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. 
 
 st.markdown("<h1 style='text-align: center;'>Voitures produites</h1>", unsafe_allow_html=True)
 
-fig = px.histogram(df, x="count")
+
+count_list = {'Region': ['US', 'Europe', 'Japan'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
+df_count = pd.DataFrame(count_list)  
+
+fig = px.histogram(df_count, x="Region")
 st.plotly_chart(fig)
