@@ -15,4 +15,7 @@ import plotly.graph_objects as go
 st.header("Streamlit : build and share data apps")
 
 
-st.image('Challenge.jpg')
+
+
+
+st.image('assets/Challenge.jpg')
