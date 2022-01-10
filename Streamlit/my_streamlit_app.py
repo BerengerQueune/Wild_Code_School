@@ -13,10 +13,17 @@ st.image('Streamlit/assets/challenge.png')
 df_voiture = pd.read_csv('https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv')
 
 
-import seaborn as sns
-viz_correlation = sns.heatmap(df_voiture.corr(), 
-								center=0,
-								cmap = sns.color_palette("vlag", as_cmap=True)
-								)
 
-st.pyplot(viz_correlation.figure)
+
+corr = df_voiture.corr()
+fig = go.Figure()
+fig.add_trace(go.Heatmap(
+    z = corr,
+    x = corr.columns.values,
+    y = corr.columns.values,
+    colorscale = px.colors.diverging.RdBu,
+    zmid=0
+))
+
+fig.update_layout(width=1000, height=900)
+st.pyplot(fig.show())
