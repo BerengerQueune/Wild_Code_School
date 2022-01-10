@@ -19,7 +19,9 @@ df_EU = df_voiture[df_voiture['continent'] == ' Europe.']
 col1, col2, col3= st.columns([3,3,3])
 
 with col2:
-    st.write("Toutes les régions")
+    all_button = st.button("Toutes les régions.")
+    if all_button:
+        df = df_voiture
 
 
 col1, col2, col3= st.columns([3,3,3])
@@ -31,10 +33,14 @@ with col1:
         df = df_US
 
 with col2:
-    st.write("Europe")
+    EU_button = st.button("Europe")
+    if US_button:
+        df = df_EU
 
 with col3:
-    st.write("Japon")
+    Japan_button = st.button("Japon")
+    if US_button:
+        df = df_Japan
 
 
 
