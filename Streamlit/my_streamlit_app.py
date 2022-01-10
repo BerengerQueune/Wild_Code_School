@@ -18,4 +18,4 @@ st.header("Streamlit : build and share data apps")
 
 
 
-st.image('assets/Challenge.jpg')
+st.image('assets/challenge.png')
