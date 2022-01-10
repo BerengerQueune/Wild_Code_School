@@ -44,7 +44,7 @@ with col3:
     if Japan_button:
         df = df_Japan
 
-df
+
 
 corr = df.corr()
 fig = go.Figure()
