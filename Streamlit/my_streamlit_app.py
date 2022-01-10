@@ -81,11 +81,11 @@ st.plotly_chart(fig)
 st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie 'time_to_60'. C'est également vrai quand on sélectionné la région 'US' mais les données sont assez différentes sur la région 'Japon' et 'Europe'.")
 
 
-st.markdown("<h1 style='text-align: center;'>Voitures produites</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>Voitures produites par région</h1>", unsafe_allow_html=True)
 
 
 count_list = {'Region': ['US', 'Europe', 'Japan'], 'Nombre de voitures': [len(df_US.index), len(df_EU.index), len(df_Japan.index)]}
 df_count = pd.DataFrame(count_list)  
 
-fig = px.histogram(df_count, x="Region")
+fig = px.histogram(df_count, x="Nombre de voitures")
 st.plotly_chart(fig)
