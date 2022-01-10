@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.set_page_config(page_title='Data Yoyo', page_icon=':musical_note:')
+st.set_page_config(page_title='Stram', page_icon=':musical_note:')
 
 st.markdown("<h1 style='text-align: center;'>Streamlit : build and share data apps</h1>", unsafe_allow_html=True)
 
@@ -78,4 +78,9 @@ fig.add_trace(go.Heatmap(
 fig.update_layout(width=1000, height=900)
 st.plotly_chart(fig)
 
-st.write("Comme le montre bien la heatmap. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie 'time_to_60'.")
+st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie 'time_to_60'. C'est également vrai quand on sélectionné la région 'US' mais les données sont assez différentes sur la région 'Japon' et 'Europe'.")
+
+
+fig = px.histogram(df, x="mpg")
+
+st.plotly_chart(fig)
