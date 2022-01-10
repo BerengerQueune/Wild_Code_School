@@ -67,7 +67,7 @@ with col2:
     ))
 
     fig.update_layout(width=1000, height=900)
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, config = config, use_container_width = True)
 
 st.write("Comme le montre la heatmap quand on sélectionne toutes les régions. La catégorie 'mpg' est fortement corrélée aux catégories 'cylinders', 'cubicinches', 'hp', 'weightlbs'. On constate également que la catégorie 'hp' est corrélée à la catégorie 'time_to_60'. C'est également vrai quand on sélectionné la région 'US' mais les données sont assez différentes sur la région 'Japon' et 'Europe'.")
 
@@ -83,7 +83,7 @@ col1, col2, col3= st.columns([1,8,1])
 with col2:
 
     fig = px.bar(df_count, x="Region", y="Nombre de voitures")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, config = config, use_container_width = True)
 
 st.write("Il y a bien plus de voitures produites aux US qu'en Europe et au Japon.")
 
