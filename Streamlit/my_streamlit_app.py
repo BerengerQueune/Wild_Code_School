@@ -12,4 +12,4 @@ from sklearn.neighbors import NearestNeighbors
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 
-st.write("lol")
+st.title("Streamlit : build and share data apps")
